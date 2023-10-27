@@ -4,7 +4,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+ 
+}
+.log {
+  position: fixed;
+  height: auto;
+  left: 0px;
+  width: 250px;
+
 }
 
 .description {
@@ -15,7 +22,7 @@
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
-  font-family: var(--font-mono);
+ 
 }
 
 .description a {
@@ -44,6 +51,18 @@
   grid-template-columns: repeat(4, minmax(25%, auto));
   max-width: 100%;
   width: var(--max-width);
+}
+.grid a {
+  padding: 1rem;
+  border: 1px solid #0f8176;
+  border-radius: 10px;
+  margin: 10px;
+}
+.grid p {
+  text-align: justify;
+}
+.grid h2 {
+  padding:8px 0;
 }
 
 .card {

@@ -1,0 +1,9 @@
+.body {
+    padding: 1rem;
+    background-color: azure;
+}
+
+.logo{
+    padding: 1rem;
+    border-radius: 5px;
+}

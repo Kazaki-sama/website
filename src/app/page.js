@@ -1,95 +1,105 @@
-import Image from 'next/image'
+import React from 'react'
 import styles from './page.module.css'
+import Image from 'next/image'
+import Link from 'next/link'
+
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
+
+    return (
+        <main className={styles.main}>
+          {/* <div className={styles.log} >
+            <Image 
+             
+              src="/batma.jpg"
+              alt="/batma.jpg"
+              width={180}
+              height={37}
               priority
             />
-          </a>
-        </div>
-      </div>
+          </div> */}
+    
+          <div className={styles.grid}>
+            
+          <Link href={{
+            pathname:"/batman",
+          }}>
+            
+             <Image
+              className={styles.product}
+              src='/batma.jpg'
+              alt='/batma .jpg'
+              width={170}
+              height={235}
+              priority
+              />
+              
+              
+              <h2>
+                batman toy <span>-&gt;</span>
+              </h2>
+              <p>Official Child's Batman Costume includes printed padded jumpsuit with muscle chest detail, half belt print</p>
+              
+            </Link>
+            
+    
+            <Link href={{
+            pathname:"/mouse",
+          }}>
+              <Image
+               className={styles.product}
+               src='/mouse.jpg'
+               alt='/mouse.jpg'
+               width={170}
+               height={235}
+               priority
+              />
+              <h2>
+                Wireless mouse <span>-&gt;</span>
+              </h2>
+              <p>Smooth, precise and affordable wireless optical 3-button mouse with USB-A nano receiver for laptop, desktop and netbook PCs</p>
+            </Link>
+    
+            <Link href={{
+            pathname:"/bottle",
+          }}>
+             <Image
+               className={styles.product}
+               src='/bottle.jpg'
+               alt='/bottle.jpg'
+               width={170}
+               height={235}
+               priority
+              />
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+              <h2>
+                Bottle <span>-&gt;</span>
+              </h2>
+              <p>This Insulated Thermal bottle is made from high-quality 304 stainless steel Advanced vacuum insulation technology keeps beverage hot or cold for over 6 hours.
+You can keep it in your kids sports bag or backpack for a hike outdoors, or take it to yoga class, without worrying about leaks.</p>
+            </Link>
+    
+            <Link href={{
+            pathname:"/cloth",
+          }}>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+<Image
+               className={styles.product}
+               src='/cloth.jpg'
+               alt='/cloth.jpg'
+               width={200}
+               height={235}
+               priority
+              />
+              <h2>
+                Cloths <span>-&gt;</span>
+              </h2>
+              <p>
+              Feast your eyes on our cotton marvels, where breathability meets fashion.
+              </p>
+            </Link>
+          </div>
+        </main>
+      )
 }
+
